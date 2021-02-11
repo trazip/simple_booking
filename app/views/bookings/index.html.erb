@@ -1,0 +1,8 @@
+<%= calendar(number_of_days: 4, events: @bookings) do |date, bookings| %>
+  <%= date %>
+  <% bookings.each do |booking| %>
+    <div>
+      <%= booking %>
+    </div>
+  <% end %>
+<% end %>
